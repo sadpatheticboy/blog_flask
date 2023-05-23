@@ -1,7 +1,85 @@
-h1 {
-    color: red;
+/* Обнуляющие теги. У каждого браузеры есть свои отступы, шрифты, разрешения, всё это обнуляется перед запуском */
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.wrapper{
-    outline: 1px orange solid;
+/* Обнуление для html, высота - 100% */
+html, body {
+    height: 100%;
 }
+
+
+/* MAIN MENU */
+/* Заголовок. Ширина и градиентовый оттеник для фона */
+.header {
+    height: 140px;
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+}
+
+/* Блок меню. flex - разворачивает блоки горизонтально. flex-end - блоки в конец (справа), padding-right - отступ */
+.main_menu {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 60px;
+}
+
+/* Удаление ненужного подсвечивания ссылок */
+.main_menu a {
+    text-decoration: none;
+    color: darkslategrey;
+    font-weight: 400;
+}
+
+/* Установка стиля для списка: удаление каких-то точек на словах, отступы между словами, ... */
+.main_menu li {
+    list-style: none;
+    margin-right: 10px;
+    width: 140px;
+    margin-top: 5%;
+    box-shadow: 10px 10px 10px grey; /* тени */
+    font-family: monospace;
+    border-radius: 100px;
+    text-align: center;
+}
+
+/* hover - при наведении */
+.main_menu li:hover {
+    transition-duration: 1s;
+    box-shadow: 4px 5px 50px grey;
+}
+
+.main_menu p {
+    font-size: 16px;
+}
+
+
+/* WRAPPER */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+/* CONTENT */
+.content {
+    width: 60%;
+    margin: 100px auto 0;
+    flex: 1 0 auto;
+}
+
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    font-size: 13px;
+    font-family: monospace;
+    background-color: antiquewhite;
+    flex: 0 0 auto;
+}
+
