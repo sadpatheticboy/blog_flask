@@ -1,6 +1,29 @@
 {% extends 'layout.html' %}
 
 
-{% block content %}
+{% block main_page %}
 
-{% endblock content %}
+<div class="wrapper">
+    <div class="empty_block"></div>
+    <div class="info">
+
+        <div class="description">
+            <p class="names"> sadpatheticboy </p>
+
+            <div class="desc">
+                <ul class="checkmark">
+                    <li><a href="{{ url_for('python_page') }}">Python (ООП, asyncio)</a></li>
+                    <li><a href="{{ url_for('algorithms_page') }}">Алгоритмы и структуры данных</a></li>
+                    <li><a href="{{ url_for('flask_page') }}">Flask</a></li>
+                    <li><a href="{{ url_for('sql_page') }}">SQL (PostgreSQL)</a></li>
+                    <li><a href="{{ url_for('css_page') }}">CSS (SASS, LESS)</a></li>
+                    <li><a href="{{ url_for('html_page') }}">HTML</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock main_page %}

@@ -10,6 +10,14 @@ html, body {
 }
 
 
+/* LOGO */
+.logo img {
+    float: left;
+    margin-left: 80px;
+    width: 70px;
+}
+
+
 /* MAIN MENU */
 /* Заголовок. Ширина и градиентовый оттеник для фона */
 .header {
@@ -61,12 +69,82 @@ html, body {
     height: 100%;
 }
 
+.empty_block {
+    height: 40px;
+}
+
 
 /* CONTENT */
 .content {
     width: 60%;
     margin: 100px auto 0;
     flex: 1 0 auto;
+}
+
+
+/* MAIN_PAGE */
+.info {
+    display: flex;
+    margin: 80px auto;
+    width: 80%;
+    box-shadow: -5px 15px 10px skyblue;
+    align-items: center;
+    border-radius: 200px;
+    font-family: monospace;
+}
+
+.description {
+    font-size: 40px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.names {
+    box-shadow: -5px 15px 10px skyblue;
+    border-radius: 200px;
+    padding: 10px 20px;
+    letter-spacing: 3px;
+    margin-bottom: 20px
+}
+
+.desc {
+    width: 100%;
+    font-width: 600;
+    color: dodgerblue;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 skyblue;
+    border-radius: 200px;
+}
+
+.desc li {
+    margin-bottom: 10px;
+    font-style: normal;
+    box-shadow: 5px 3px 10px grey;
+    font-size: 16px;
+    padding: 5px;
+    font-family: monospace;
+    border-radius: 200px;
+    letter-spacing: 2px;
+}
+
+ul.checkmark li:before {
+    content: "\2713\0020";
+    color: forestgreen;
+}
+
+ul a {
+    text-decoration: none;
+    color: mediumaquamarine;
+}
+
+.checkmark li:hover {
+    transition-duration: 0.1s;
+    box-shadow: 0 12px 10px orange;
+}
+
+.checkmark li {
+    list-style: none;
 }
 
 
